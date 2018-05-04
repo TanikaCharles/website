@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Wire+One');
+html {
+    min-height:100%;
+}
+body {
+  color: white;
+  font-family: "Open Sans";
+  background: linear-gradient(black, #21121d);
+  align-items: center;
+}
+
+#head {
+  font-size: 400%;
+  margin-left: 4%;
+  float: left;
+  font-family: "Wire One";
+  letter-spacing: 0.5em;
+  width: 80%;
+  clear: none;
+}
+#menu {
+  float: right;
+}
+#tagline {
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+p{
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.subhead {
+  letter-spacing: 0.15em;
+  font-family: "Wire One";
+  font-size: 200%;
+  text-align: center;
+}
+
+
+#moon {
+    font-size: 56pt;
+    color: white;
+    margin:auto;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   box-shadow: 0px 35px 0 0 #fd6051;
+  margin-bottom: 30px;
+}
+
+#pic {
+  padding-top: 10%;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+#pic:hover #moon{
+  color: white;
+  background-color: #392033;
+  box-shadow: 0px 35px 0 0  #fd6051;
+}
+#summary {
+  display: none;
+
+
+}
+#projects {
+  display: none;
+}
+#education {
+  display: none;
+}
+.text {
+  margin: 5%;
+}
+#edu {display: none;}
+#proj {display: none;}
+#nav {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  display: none;
+  clear: none;
+  right: 0;
+  text-align: right;
+}
+#nav p:hover {
+  color: #fec051;
+}
+
+@media only screen and (min-width: 1000px){
+  header{
+    width: 50%;
+    text-align: center;
+  }
+  #pic{
+    width: 40%;
+    float: left;
+    clear: both;
+    overflow: hidden;
+  }
+  .text{
+   overflow: hidden;
+  }
+
+}
+/*#00e6e6
+#4dffff
+#00c614
+#33333c
+#000f10
+#00ffff
+
+/**red #e1272a
+pink #e12a63
+ purple #561b93
+ blue #1c1793
+light pink #e886ce
+ black #0e0e0e
+dark grey #202020
+orange #e14f2e**/
