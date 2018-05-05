@@ -14,29 +14,34 @@ $(document).ready(function(){
       $("#moon").css("background-color", $lightPurp);
       $("#moon").css("box-shadow","10px 10px #ff8967");
       $("body").css("background","linear-gradient(#21121d, #562937)");
+      $("#nav").css("background-color", "#562937");
       $("#tagline").css("display", "none");
       $("#pic").fadeIn(2000);
       $("#summary").fadeIn(3000);
       $clicks = 1;
     }
     function education(){
+      $("#tagline").css("display", "none");
       $("#projects").fadeOut();
       $("#summary").fadeOut();
       $("#pic").fadeOut();
       $("#moon").css("background-color", $darkPink);
       $("#moon").css("box-shadow","10px 10px #fec051");
       $("body").css("background","linear-gradient(#562937, #fd6051)");
+      $("#nav").css("background-color", "#fd6051");
       $("#education").fadeIn(3000);
       $("#pic").fadeIn(3000);
       $clicks = 2;
     }
     function projects(){
+      $("#tagline").css("display", "none");
       $("#summary").fadeOut();
       $("#education").fadeOut();
       $("#pic").fadeOut();
       $("#moon").css("background-color", $darkYellow);
       $("#moon").css("box-shadow","10px 10px #ff8967");
       $("body").css("background","linear-gradient(#fd6051, #fec051)");
+      $("#nav").css("background-color", "#fec051");
       $("#projects").fadeIn(3000);
       $("#pic").fadeIn(3000);
       $clicks = 0;

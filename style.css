@@ -18,9 +18,6 @@ body {
   width: 80%;
   clear: none;
 }
-#menu {
-  float: right;
-}
 #tagline {
   text-align: center;
   letter-spacing: 0.1em;
@@ -78,19 +75,41 @@ p{
 }
 #edu {display: none;}
 #proj {display: none;}
-#nav {
-  position: relative;
-  display: inline-block;
-  z-index: 2;
-  display: none;
-  clear: none;
-  right: 0;
-  text-align: right;
-}
-#nav p:hover {
-  color: #fec051;
-}
 
+footer ul {
+  background-color: #392033;
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer li:hover {
+  color:#fec051;
+}
+a {
+  color: white;
+  text-decoration-line: none;
+}
+a:hover {
+  color: #fd6051;
+  text-decoration-line: none;
+}
+/*.txtimg {
+  width: 100%;
+}
+.txt {
+  position: absolute;
+  top: 30%;
+  color: #21121d;
+}
+.container{ 
+  position: relative;
+  text-align: center;
+}
+*/
 @media only screen and (min-width: 1000px){
   header{
     width: 50%;
@@ -105,6 +124,19 @@ p{
   .text{
    overflow: hidden;
   }
+  #dropdownmenu {
+    float: right;
+  }
+  /*#projects img {
+    width: 50%;
+    float: right;
+    overflow: hidden;
+  }
+  #projects p {
+    width: 40%;
+    float: left;
+    overflow: hidden;
+  }*/
 
 }
 /*#00e6e6
