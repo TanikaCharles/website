@@ -90,6 +90,7 @@ footer li:hover {
   color:#fec051;
 }
 a {
+  display: none;
   color: white;
   text-decoration-line: none;
 }

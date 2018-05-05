@@ -38,6 +38,7 @@ $(document).ready(function(){
       $("#summary").fadeOut();
       $("#education").fadeOut();
       $("#pic").fadeOut();
+      $("a").css("display","block");
       $("#moon").css("background-color", $darkYellow);
       $("#moon").css("box-shadow","10px 10px #ff8967");
       $("body").css("background","linear-gradient(#fd6051, #fec051)");
