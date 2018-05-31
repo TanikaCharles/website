@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Wire+One');
 html {
-    min-height:100%;
+    min-height:150%;
 }
 body {
   color: white;
@@ -8,14 +8,17 @@ body {
   background: linear-gradient(black, #21121d);
   align-items: center;
 }
-
+header{
+  width: 100%;
+  text-align: center;
+}
 #head {
   font-size: 400%;
   margin-left: 4%;
   float: left;
   font-family: "Wire One";
   letter-spacing: 0.5em;
-  width: 80%;
+  width: 100%;
   clear: none;
 }
 #tagline {
@@ -32,8 +35,14 @@ p{
   font-family: "Wire One";
   font-size: 200%;
   text-align: center;
+  margin-bottom: 20px;
 }
-
+dt {
+  font-size: 120%;
+}
+#educationlist {
+  text-align: center;
+}
 
 #moon {
     font-size: 56pt;
@@ -59,10 +68,11 @@ p{
   background-color: #392033;
   box-shadow: 0px 35px 0 0  #fd6051;
 }
+#projects img {
+  width: 100%;
+}
 #summary {
   display: none;
-
-
 }
 #projects {
   display: none;
@@ -72,12 +82,15 @@ p{
 }
 .text {
   margin: 5%;
+  padding-bottom: 10%;
+  clear: both;
 }
 #edu {display: none;}
 #proj {display: none;}
 #connect {display: none;}
-
+nav {width: 100%;}
 footer ul {
+  font-size: 130%;
   background-color: #392033;
   list-style: none;
   margin: 0 auto;
@@ -94,6 +107,10 @@ a {
   display: none;
   color: white;
   text-decoration-line: none;
+}
+a img {
+  width: 50px;
+  margin: 10px;
 }
 a:hover {
   color: #fd6051;
@@ -113,21 +130,42 @@ a:hover {
 }
 */
 @media only screen and (min-width: 1000px){
-  header{
-    width: 50%;
-    text-align: center;
+  #projects img {
+    width: 48%;
+    float: left;
   }
-  #pic{
+  #projects p {
+    float: right;
+    width: 48%;
+  }
+  /*.text {
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+  }*/
+  
+  /*#pic{
+    
     width: 40%;
     float: left;
     clear: both;
-    overflow: hidden;
+    /*overflow: hidden;
   }
   .text{
-   overflow: hidden;
+    padding-top: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    /*overflow: hidden;
+    float: right;
+    clear: none;
   }
   #dropdownmenu {
     float: right;
+  }
+  #projects img {
+    width: 100%;
   }
   /*#projects img {
     width: 50%;

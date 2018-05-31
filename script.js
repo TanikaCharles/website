@@ -8,6 +8,7 @@ $(document).ready(function(){
     $darkYellow = '#fec051';
     $clicks = 0;
     function summary(){
+      $("#connect").fadeOut();
       $("#education").fadeOut();
       $("#projects").fadeOut();
       $("#pic").css("display", "none");
@@ -21,6 +22,7 @@ $(document).ready(function(){
       $clicks = 1;
     }
     function education(){
+      $("#connect").fadeOut();
       $("#tagline").css("display", "none");
       $("#projects").fadeOut();
       $("#summary").fadeOut();
@@ -34,6 +36,7 @@ $(document).ready(function(){
       $clicks = 2;
     }
     function projects(){
+      $("#connect").fadeOut();
       $("#tagline").css("display", "none");
       $("#summary").fadeOut();
       $("#education").fadeOut();
@@ -45,6 +48,22 @@ $(document).ready(function(){
       $("#nav").css("background-color", "#fec051");
       $("#projects").fadeIn(3000);
       $("#pic").fadeIn(3000);
+      $clicks = 3;
+    }
+    function connect(){
+      $("#tagline").css("display", "none");
+      $("#summary").fadeOut();
+      $("#education").fadeOut();
+      $("#projects").fadeOut();
+      $("#pic").fadeOut();
+      $("a").css("display","inline-block");
+      $("#connect").css("text-align","center");
+      $("#moon").css("background-color", $darkYellow);
+      $("#moon").css("box-shadow","10px 10px #ff8967");
+      $("body").css("background","linear-gradient(#fd6051, #fec051)");
+      $("#nav").css("background-color", "#fec051");
+      $("#connect").fadeIn(3000);
+      $("#pic").fadeIn(3000);
       $clicks = 0;
     }
     $("#pic").click(function(){
@@ -54,7 +73,9 @@ $(document).ready(function(){
         education();
       } else if ($clicks == 2){
         projects();
-      } 
+      } else if ($clicks == 3){
+        connect();
+      }
   });
   $("#menu").hover(
     function(){
@@ -71,7 +92,7 @@ $(document).ready(function(){
       $("#who").attr("src", "images/right-arrow.png");
     }
   );
-    $menuClick = 1;
+  /*  $menuClick = 1;
   $("#menu").click(function(){
       if ($menuClick == 1){
         $("#nav").css("display", "block");
@@ -80,7 +101,7 @@ $(document).ready(function(){
         $("#nav").css("display", "none");
         $menuClick = 1;
       }
-  });
+  });*/
   $("#goSummary").click(function(){
         summary();
   });
@@ -90,4 +111,7 @@ $(document).ready(function(){
   $("#goProjects").click(function(){
         projects();
   });
+  $("#goConnect").click(function(){
+    connect();
+});
 });
