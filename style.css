@@ -9,6 +9,8 @@ body {
   font-family: "Open Sans";
   background: linear-gradient(black, #21121d);
   align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 header{
   width: 100%;
