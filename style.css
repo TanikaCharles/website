@@ -2,7 +2,7 @@
 html {
     min-height:100%;
     max-width: 100%;
-    overflow-x: hidden;
+    min-width: 100%;
 }
 body {
   color: white;
@@ -92,10 +92,10 @@ dt {
 #connect {display: none;}
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: justify;
+  text-align: center;
 }
 footer ul {
   text-align: center;
@@ -104,15 +104,12 @@ footer ul {
   list-style: none;
   margin: 0 auto;
   display: table;
+  bottom: 0;
   width: 100%;
-  /*justify-content: space-around;
-  position: fixed;
-  bottom: 0;*/
-  
 }
 ul li {
   display: table-cell;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
 }
 footer li:hover {
   color:#fec051;
